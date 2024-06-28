@@ -46,7 +46,7 @@ export default function Navbar() {
                 py={1}
                 rounded="md"
                 _hover={{ textDecoration: 'none' }}
-                to="/"
+                to="/quiz-app-react"
               >
               <HStack className="d-flex justify-content-center align-items-center" justifyContent="center" alignItems="center">
                 <FaHome color="white"/>
@@ -58,7 +58,7 @@ export default function Navbar() {
                 py={1}
                 rounded="md"
                 _hover={{ textDecoration: 'none' }}
-                to="/about"
+                to="quiz-app-react/about"
               >
                 <HStack className="d-flex justify-content-center align-items-center" justifyContent="center" alignItems="center" >
                     <InfoIcon color="white"/>
@@ -76,7 +76,7 @@ export default function Navbar() {
                 py={1}
                 rounded="md"
                 _hover={{ textDecoration: 'none' }}
-                to="/"
+                to="quiz-app-react/"
               >
                 <HStack className="d-felx justify-content-center align-items-center" justifyContent="center" alignItems="center">
                     <FaHome color="white"/>
@@ -88,7 +88,7 @@ export default function Navbar() {
                 py={1}
                 rounded="md"
                 _hover={{ textDecoration: 'none' }}
-                to="/about"
+                to="quiz-app-react/about"
               >
                 <HStack className="d-flex justify-content-center align-items-center" justifyContent="center" alignItems="center">
                     <InfoIcon color="white"/>

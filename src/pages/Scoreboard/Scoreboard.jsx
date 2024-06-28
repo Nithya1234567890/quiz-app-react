@@ -87,7 +87,7 @@ const Scoreboard = (props) => {
                         <div className='footer-text'>Share Score</div>
                     </div>
                     <div className="text-center">
-                        <ReachLink to='/review'>
+                        <ReachLink to='/quiz-app-react/review'>
                             <div style={{ backgroundColor: '#BF8D6F' }} className="home-btn">
                                 <AiOutlineEye />
                             </div>

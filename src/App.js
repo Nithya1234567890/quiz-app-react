@@ -12,9 +12,9 @@ function App() {
       <div className='App'>
         <Navbar/>
         <Routes>
-          <Route exact path='/' element={<Home/>}/>
-          <Route exact path='/about' element={<About/>}/>
-          <Route exact path='/review' element={<ReviewAnswer/>}/>
+          <Route exact path='/quiz-app-react' element={<Home/>}/>
+          <Route exact path='/quiz-app-react/about' element={<About/>}/>
+          <Route exact path='/quiz-app-react/review' element={<ReviewAnswer/>}/>
         </Routes>
       </div>
       </>
