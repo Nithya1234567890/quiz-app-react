@@ -1,13 +1,45 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import {
+  extendTheme,
+  ChakraProvider,
+  CSSReset,
+  ThemeProvider,
+} from "@chakra-ui/react";
+import { BrowserRouter as Router } from "react-router-dom";
+import reportWebVitals from "./reportWebVitals";
+import QuizState from "./context/QuizState";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const colors = {
+  brand: {
+    900: "#1a365d",
+    800: "#153e75",
+    700: "#2a69ac",
+  },
+};
+
+const fonts = {
+  body: "Roboto, sans-serif",
+  heading: "Roboto, sans-serif",
+};
+
+const theme = extendTheme({ colors, fonts });
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <ChakraProvider>
+      <ThemeProvider theme={theme}>
+        <CSSReset />
+        <Router>
+        <QuizState>
+          <App />
+        </QuizState>
+        </Router>
+      </ThemeProvider>
+    </ChakraProvider>
   </React.StrictMode>
 );
 
